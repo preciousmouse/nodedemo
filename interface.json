@@ -1,0 +1,444 @@
+// 默认的用户头像和书籍封面
+// headsrc = "img/portrait.jpg"
+// coversrc = "img/book-default.png"
+{
+	'/login': {
+		'send': {
+			'acounnt': "admin",
+			'password': "admin"
+		},
+		'data': {
+			'status': "success" // "failed"
+		}
+	},
+	'/logout': {
+		'send': {
+			'userid': "151310216"
+		},
+		'data': {
+			'status': "success" // "failed"
+		}
+	},
+	'/book/renew': {
+		'send': {
+			'uid': "151310216",
+			'bookid': "10010250"},
+		'data': {
+			'status': "success", // "failed"
+			'borrowtime': "2018-4-13 00:00",
+			'backtime': "018-4-16 00:00",
+			'renewtimes': "0"
+		}
+	},
+	'/book/order': {
+		'send': {
+			'uid': "151310216",
+			'bookid': "10010250"},
+		'data': {
+			'status': "success", // "failed"
+			'ordertime': "2018-4-13 00:00",
+			'takebooktime': "2018-4-16 00:00"
+		}
+	},
+	'/cancelorder': {
+		'send': {
+			'uid': "151310216",
+			'bookid': "10010250"},
+		'data': {
+			'status': "success" // "failed"
+		}
+	},
+	'/deletecomment': {
+		'send': {
+			'commentid': "151310216564"},
+		'data': {
+			'status': "success" // "failed"
+		}
+	},
+
+	'/person-home': {
+		'data': {
+			'nav': {
+				'menu': ["<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'><span class='person-menu'></span><i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li><li><a class='tooltip-tip ajax-load' href='person-home.html' title='Home'><i class='fa fa-home'></i><span>Home</span></a></li><li><a class='tooltip-tip ajax-load' href='#' title='Account'><i class='icon-user'></i><span>Account</span></a><ul><li><a class='tooltip-tip2 ajax-load' href='person-info.html' title='Information'><i class='icon-document-edit'></i><span>Information</span></a></li><li><a class='tooltip-tip2 ajax-load' href='abnormal-state.html' title='Abnormal State'><i class='fa fa-exclamation-triangle'></i><span>Abnormal State</span></a></li><li><a class='tooltip-tip2 ajax-load' href='recharge.html' title='Recharge'><i class='fa fa-shopping-cart'></i><span>Recharge</span></a></li></ul> </li>",
+					"<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'> <span class='book-menu'></span> <i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li> <li><a class='tooltip-tip ajax-load' href='search.html' title='Search Booklist'> <i class='fa fa-search'></i> <span>Search Booklist</span></a></li> <li><a id='books_switch' class='tooltip-tip ajax-load' href='#' title='My Books'> <i class='icon-map'></i> <span>My Books</span></a> <ul><li><a class='tooltip-tip2 ajax-load' href='history.html' title='History'><i class='fa fa-clock-o'></i><span>History</span></a></li><li><a class='tooltip-tip2 ajax-load' href='order.html' title='My Orders'><i class='fa fa-bookmark'></i><span>My Orders</span></a></li><li><a class='tooltip-tip2 ajax-load' href='comment.html' title='My Comments'><i class='fa fa-comment'></i><span>My Comments</span></a></li></ul></li>"
+				],
+				'booknumber': 10086,
+				'newbook': 5,
+				'borrowed': 2345,
+				'visitors': 210,
+				'newmessagenum': "5"},
+			'user': {
+				'uid' : "151310216",
+				'username': "preciousmouse",
+				'headsrc': "img/portrait.jpg",
+				'phone': "13612345678",
+				'email': "chenny_gu@foxmail.com",
+				'coins': "21",
+				'borrownumber': "2",
+				'usergroup': {
+					'grouplevel': "1",
+					'groupname': "咸鱼",
+					'maxborrownumber': "5"
+				}},
+			'borrowlist': [{// 只需前两项
+				'book': {
+					'bookid': "0100250",
+					'bookname': "小缘看世界",
+					'author': "大毛",
+					'coversrc': "img/book-default.png"},
+				'borrowtime': "2018-4-13 00:00",
+				'backtime': "2018-4-16 00:00",
+				'renewtimes': "0",
+				'status': "已借阅" // "已还书" 、"已超时"
+			},{}],
+			'orderlist': [{// 只需前两项
+				'book': {
+					'bookid': "0100250",
+					'bookname': "小缘看世界",
+					'author': "大毛",
+					'coversrc': "img/book-default.png"},
+				'ordertime': "2018-4-13 00:00",
+				'takebooktime': "2018-4-16 00:00"
+			},{}],
+			'messagelist': [{
+				'title': "《FGO》1.5部「断章：残存诗篇」正式开幕！",
+				'content': "B站清晰度升级全面公测了。升级后，UP主视频压制后720P清晰度码率最高2000k；1080P清晰度码率最高3000k；1080P+清晰度码率最高6000k；新增720P60清晰度码率最高3000k，帧率60；新增1080P60清晰度码率最高6000k ，帧率60；1080P+、720P60、1080P60最高音频码率提升至320k。未达二压线，原清晰度输出策略不变。",
+				'messagetime': "2018-4-9  11:56",
+				'readflag': "false" // "true"
+			},{}]
+		}
+	},
+	'/person-info': {
+		'data': {
+			'nav': {
+				'menu': ["<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'><span class='person-menu'></span><i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li><li><a class='tooltip-tip ajax-load' href='person-home.html' title='Home'><i class='fa fa-home'></i><span>Home</span></a></li><li><a class='tooltip-tip ajax-load' href='#' title='Account'><i class='icon-user'></i><span>Account</span></a><ul><li><a class='tooltip-tip2 ajax-load' href='person-info.html' title='Information'><i class='icon-document-edit'></i><span>Information</span></a></li><li><a class='tooltip-tip2 ajax-load' href='abnormal-state.html' title='Abnormal State'><i class='fa fa-exclamation-triangle'></i><span>Abnormal State</span></a></li><li><a class='tooltip-tip2 ajax-load' href='recharge.html' title='Recharge'><i class='fa fa-shopping-cart'></i><span>Recharge</span></a></li></ul> </li>",
+					"<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'> <span class='book-menu'></span> <i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li> <li><a class='tooltip-tip ajax-load' href='search.html' title='Search Booklist'> <i class='fa fa-search'></i> <span>Search Booklist</span></a></li> <li><a id='books_switch' class='tooltip-tip ajax-load' href='#' title='My Books'> <i class='icon-map'></i> <span>My Books</span></a> <ul><li><a class='tooltip-tip2 ajax-load' href='history.html' title='History'><i class='fa fa-clock-o'></i><span>History</span></a></li><li><a class='tooltip-tip2 ajax-load' href='order.html' title='My Orders'><i class='fa fa-bookmark'></i><span>My Orders</span></a></li><li><a class='tooltip-tip2 ajax-load' href='comment.html' title='My Comments'><i class='fa fa-comment'></i><span>My Comments</span></a></li></ul></li>"
+				],
+				'booknumber': 10086,
+				'newbook': 5,
+				'borrowed': 2345,
+				'visitors': 210,
+				'newmessagenum': "5"},
+			'user': {
+				'uid': "151310216",
+				'username': "preciousmouse",
+				'headsrc': "/img/portrait.jpg",
+				'phone': "13612345678",
+				'email': "chenny_gu@foxmail.com"}
+		}
+	},
+	'/person-info/head-upload': {}, // 暂鸽
+	'/person-info/update': {
+		'send': {
+			'newinfo': {
+				'uid': "151310216",
+				'username': "preciousmouse",
+				'password': "123456",
+				'headsrc': "/img/portrait.jpg",
+				'phone': "13612345678"
+			}
+		},
+		'data': {
+			'status': "success" // "failed"
+		}
+	},
+	'/abnormal-state': {
+		'data': {
+			'nav': {
+				'menu': ["<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'><span class='person-menu'></span><i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li><li><a class='tooltip-tip ajax-load' href='person-home.html' title='Home'><i class='fa fa-home'></i><span>Home</span></a></li><li><a class='tooltip-tip ajax-load' href='#' title='Account'><i class='icon-user'></i><span>Account</span></a><ul><li><a class='tooltip-tip2 ajax-load' href='person-info.html' title='Information'><i class='icon-document-edit'></i><span>Information</span></a></li><li><a class='tooltip-tip2 ajax-load' href='abnormal-state.html' title='Abnormal State'><i class='fa fa-exclamation-triangle'></i><span>Abnormal State</span></a></li><li><a class='tooltip-tip2 ajax-load' href='recharge.html' title='Recharge'><i class='fa fa-shopping-cart'></i><span>Recharge</span></a></li></ul> </li>",
+					"<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'> <span class='book-menu'></span> <i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li> <li><a class='tooltip-tip ajax-load' href='search.html' title='Search Booklist'> <i class='fa fa-search'></i> <span>Search Booklist</span></a></li> <li><a id='books_switch' class='tooltip-tip ajax-load' href='#' title='My Books'> <i class='icon-map'></i> <span>My Books</span></a> <ul><li><a class='tooltip-tip2 ajax-load' href='history.html' title='History'><i class='fa fa-clock-o'></i><span>History</span></a></li><li><a class='tooltip-tip2 ajax-load' href='order.html' title='My Orders'><i class='fa fa-bookmark'></i><span>My Orders</span></a></li><li><a class='tooltip-tip2 ajax-load' href='comment.html' title='My Comments'><i class='fa fa-comment'></i><span>My Comments</span></a></li></ul></li>"
+				],
+				'booknumber': 10086,
+				'newbook': 5,
+				'borrowed': 2345,
+				'visitors': 210,
+				'newmessagenum': "5"},
+			'user': {
+				'uid': "151310216",
+				'username': "preciousmouse",
+				'headsrc': "/img/portrait.jpg"},
+			'statelist': [{ // 数组元素期望是按序号降序（按违规时间降序）
+					'No': "1",
+					'statename': "罚款",
+					'reason': "超过借书期限未还书",
+					'statetime': "2018-4-17 10:47",
+					'solvetime': "2018-4-17 10:59",
+					'status': "已处理" // "未处理"
+				},{}]
+		}
+	},
+	'/recharge': {
+		'data': {
+			'nav': {
+				'menu': ["<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'><span class='person-menu'></span><i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li><li><a class='tooltip-tip ajax-load' href='person-home.html' title='Home'><i class='fa fa-home'></i><span>Home</span></a></li><li><a class='tooltip-tip ajax-load' href='#' title='Account'><i class='icon-user'></i><span>Account</span></a><ul><li><a class='tooltip-tip2 ajax-load' href='person-info.html' title='Information'><i class='icon-document-edit'></i><span>Information</span></a></li><li><a class='tooltip-tip2 ajax-load' href='abnormal-state.html' title='Abnormal State'><i class='fa fa-exclamation-triangle'></i><span>Abnormal State</span></a></li><li><a class='tooltip-tip2 ajax-load' href='recharge.html' title='Recharge'><i class='fa fa-shopping-cart'></i><span>Recharge</span></a></li></ul> </li>",
+					"<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'> <span class='book-menu'></span> <i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li> <li><a class='tooltip-tip ajax-load' href='search.html' title='Search Booklist'> <i class='fa fa-search'></i> <span>Search Booklist</span></a></li> <li><a id='books_switch' class='tooltip-tip ajax-load' href='#' title='My Books'> <i class='icon-map'></i> <span>My Books</span></a> <ul><li><a class='tooltip-tip2 ajax-load' href='history.html' title='History'><i class='fa fa-clock-o'></i><span>History</span></a></li><li><a class='tooltip-tip2 ajax-load' href='order.html' title='My Orders'><i class='fa fa-bookmark'></i><span>My Orders</span></a></li><li><a class='tooltip-tip2 ajax-load' href='comment.html' title='My Comments'><i class='fa fa-comment'></i><span>My Comments</span></a></li></ul></li>"
+				],
+				'booknumber': 10086,
+				'newbook': 5,
+				'borrowed': 2345,
+				'visitors': 210,
+				'newmessagenum': "5"},
+			'user': {
+				'uid': "151310216",
+				'username': "preciousmouse",
+				'headsrc': "/img/portrait.jpg",
+				'coins': "21"},
+			'deallist': [{
+					'No': "1",
+					'coinchange': "+1",
+					'reason': "充值",
+					'dealtime': "2018-4-17 10:47",
+					'restcoins': "21"
+				}]
+		}
+	},
+	'/recharge/pay': {
+		'send': {
+			'paynum': "1"},
+		'data': {
+			'status': "success", // "failed"
+			'newdeal': {
+				'No': "1",
+				'coinchange': "+1",
+				'reason': "充值",
+				'dealtime': "2018-4-17 10:47",
+				'restcoins': "21"
+			}
+		}
+	},
+	'/history': {
+		'data': {
+			'nav': {
+				'menu': ["<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'><span class='person-menu'></span><i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li><li><a class='tooltip-tip ajax-load' href='person-home.html' title='Home'><i class='fa fa-home'></i><span>Home</span></a></li><li><a class='tooltip-tip ajax-load' href='#' title='Account'><i class='icon-user'></i><span>Account</span></a><ul><li><a class='tooltip-tip2 ajax-load' href='person-info.html' title='Information'><i class='icon-document-edit'></i><span>Information</span></a></li><li><a class='tooltip-tip2 ajax-load' href='abnormal-state.html' title='Abnormal State'><i class='fa fa-exclamation-triangle'></i><span>Abnormal State</span></a></li><li><a class='tooltip-tip2 ajax-load' href='recharge.html' title='Recharge'><i class='fa fa-shopping-cart'></i><span>Recharge</span></a></li></ul> </li>",
+					"<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'> <span class='book-menu'></span> <i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li> <li><a class='tooltip-tip ajax-load' href='search.html' title='Search Booklist'> <i class='fa fa-search'></i> <span>Search Booklist</span></a></li> <li><a id='books_switch' class='tooltip-tip ajax-load' href='#' title='My Books'> <i class='icon-map'></i> <span>My Books</span></a> <ul><li><a class='tooltip-tip2 ajax-load' href='history.html' title='History'><i class='fa fa-clock-o'></i><span>History</span></a></li><li><a class='tooltip-tip2 ajax-load' href='order.html' title='My Orders'><i class='fa fa-bookmark'></i><span>My Orders</span></a></li><li><a class='tooltip-tip2 ajax-load' href='comment.html' title='My Comments'><i class='fa fa-comment'></i><span>My Comments</span></a></li></ul></li>"
+				],
+				'booknumber': 10086,
+				'newbook': 5,
+				'borrowed': 2345,
+				'visitors': 210,
+				'newmessagenum': "5"},
+			'user': {
+				'uid': "151310216",
+				'username': "preciousmouse",
+				'headsrc': "/img/portrait.jpg"},
+			'borrowlist': [{
+				'book': {
+					'bookid': "0100250",
+					'bookname': "小缘看世界",
+					'author': "大毛"},
+				'borrowtime': "2018-4-13 00:00",
+				'backtime': "2018-4-16 00:00",
+				'renewtimes': "0",
+				'status': "已借阅" // "已还书" 、"已超时"
+			},{}]
+		}
+	},
+	'/order': {
+		'data': {
+			'nav': {
+				'menu': ["<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'><span class='person-menu'></span><i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li><li><a class='tooltip-tip ajax-load' href='person-home.html' title='Home'><i class='fa fa-home'></i><span>Home</span></a></li><li><a class='tooltip-tip ajax-load' href='#' title='Account'><i class='icon-user'></i><span>Account</span></a><ul><li><a class='tooltip-tip2 ajax-load' href='person-info.html' title='Information'><i class='icon-document-edit'></i><span>Information</span></a></li><li><a class='tooltip-tip2 ajax-load' href='abnormal-state.html' title='Abnormal State'><i class='fa fa-exclamation-triangle'></i><span>Abnormal State</span></a></li><li><a class='tooltip-tip2 ajax-load' href='recharge.html' title='Recharge'><i class='fa fa-shopping-cart'></i><span>Recharge</span></a></li></ul> </li>",
+					"<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'> <span class='book-menu'></span> <i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li> <li><a class='tooltip-tip ajax-load' href='search.html' title='Search Booklist'> <i class='fa fa-search'></i> <span>Search Booklist</span></a></li> <li><a id='books_switch' class='tooltip-tip ajax-load' href='#' title='My Books'> <i class='icon-map'></i> <span>My Books</span></a> <ul><li><a class='tooltip-tip2 ajax-load' href='history.html' title='History'><i class='fa fa-clock-o'></i><span>History</span></a></li><li><a class='tooltip-tip2 ajax-load' href='order.html' title='My Orders'><i class='fa fa-bookmark'></i><span>My Orders</span></a></li><li><a class='tooltip-tip2 ajax-load' href='comment.html' title='My Comments'><i class='fa fa-comment'></i><span>My Comments</span></a></li></ul></li>"
+				],
+				'booknumber': 10086,
+				'newbook': 5,
+				'borrowed': 2345,
+				'visitors': 210,
+				'newmessagenum': "5"},
+			'user': {
+				'uid': "151310216",
+				'username': "preciousmouse",
+				'headsrc': "/img/portrait.jpg"},
+			'orderlist': [{
+				'book': {
+					'bookid': "0100250",
+					'bookname': "小缘看世界",
+					'author': "大毛"},
+				'ordertime': "2018-4-13 00:00",
+				'takebooktime': "2018-4-16 00:00"
+			},{}]
+		}
+	},
+	"/comments": {
+		'data': {
+			'nav': {
+				'menu': ["<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'><span class='person-menu'></span><i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li><li><a class='tooltip-tip ajax-load' href='person-home.html' title='Home'><i class='fa fa-home'></i><span>Home</span></a></li><li><a class='tooltip-tip ajax-load' href='#' title='Account'><i class='icon-user'></i><span>Account</span></a><ul><li><a class='tooltip-tip2 ajax-load' href='person-info.html' title='Information'><i class='icon-document-edit'></i><span>Information</span></a></li><li><a class='tooltip-tip2 ajax-load' href='abnormal-state.html' title='Abnormal State'><i class='fa fa-exclamation-triangle'></i><span>Abnormal State</span></a></li><li><a class='tooltip-tip2 ajax-load' href='recharge.html' title='Recharge'><i class='fa fa-shopping-cart'></i><span>Recharge</span></a></li></ul> </li>",
+					"<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'> <span class='book-menu'></span> <i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li> <li><a class='tooltip-tip ajax-load' href='search.html' title='Search Booklist'> <i class='fa fa-search'></i> <span>Search Booklist</span></a></li> <li><a id='books_switch' class='tooltip-tip ajax-load' href='#' title='My Books'> <i class='icon-map'></i> <span>My Books</span></a> <ul><li><a class='tooltip-tip2 ajax-load' href='history.html' title='History'><i class='fa fa-clock-o'></i><span>History</span></a></li><li><a class='tooltip-tip2 ajax-load' href='order.html' title='My Orders'><i class='fa fa-bookmark'></i><span>My Orders</span></a></li><li><a class='tooltip-tip2 ajax-load' href='comment.html' title='My Comments'><i class='fa fa-comment'></i><span>My Comments</span></a></li></ul></li>"
+				],
+				'booknumber': 10086,
+				'newbook': 5,
+				'borrowed': 2345,
+				'visitors': 210,
+				'newmessagenum': "5"},
+			'user': {
+				'uid': "151310216",
+				'username': "preciousmouse",
+				'headsrc': "/img/portrait.jpg"},
+			'commentlist': [{
+					'commentid': "13213543",
+					'book': {
+						'bookid': "10100250",
+						'bookname': "naive",
+						'author': "膜法师"
+					},
+					'content': "苟",
+					'floor' : "1",
+					'commenttime': "2018-4-17 14:22"
+				},{}]
+		}
+	},
+	'/message': {
+		'nav': {
+			'menu': ["<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'><span class='person-menu'></span><i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li><li><a class='tooltip-tip ajax-load' href='person-home.html' title='Home'><i class='fa fa-home'></i><span>Home</span></a></li><li><a class='tooltip-tip ajax-load' href='#' title='Account'><i class='icon-user'></i><span>Account</span></a><ul><li><a class='tooltip-tip2 ajax-load' href='person-info.html' title='Information'><i class='icon-document-edit'></i><span>Information</span></a></li><li><a class='tooltip-tip2 ajax-load' href='abnormal-state.html' title='Abnormal State'><i class='fa fa-exclamation-triangle'></i><span>Abnormal State</span></a></li><li><a class='tooltip-tip2 ajax-load' href='recharge.html' title='Recharge'><i class='fa fa-shopping-cart'></i><span>Recharge</span></a></li></ul> </li>",
+				"<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'> <span class='book-menu'></span> <i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li> <li><a class='tooltip-tip ajax-load' href='search.html' title='Search Booklist'> <i class='fa fa-search'></i> <span>Search Booklist</span></a></li> <li><a id='books_switch' class='tooltip-tip ajax-load' href='#' title='My Books'> <i class='icon-map'></i> <span>My Books</span></a> <ul><li><a class='tooltip-tip2 ajax-load' href='history.html' title='History'><i class='fa fa-clock-o'></i><span>History</span></a></li><li><a class='tooltip-tip2 ajax-load' href='order.html' title='My Orders'><i class='fa fa-bookmark'></i><span>My Orders</span></a></li><li><a class='tooltip-tip2 ajax-load' href='comment.html' title='My Comments'><i class='fa fa-comment'></i><span>My Comments</span></a></li></ul></li>"
+			],
+			'booknumber': 10086,
+			'newbook': 5,
+			'borrowed': 2345,
+			'visitors': 210,
+			'newmessagenum': "5"},
+		'user': {
+			'uid': "151310216",
+			'username': "preciousmouse",
+			'headsrc': "/img/portrait.jpg"},
+		'messagelist': [{
+			'title': "《FGO》1.5部「断章：残存诗篇」正式开幕！",
+			'content': "B站清晰度升级全面公测了。升级后，UP主视频压制后720P清晰度码率最高2000k；1080P清晰度码率最高3000k；1080P+清晰度码率最高6000k；新增720P60清晰度码率最高3000k，帧率60；新增1080P60清晰度码率最高6000k ，帧率60；1080P+、720P60、1080P60最高音频码率提升至320k。未达二压线，原清晰度输出策略不变。",
+			'messagetime': "2018-4-17 14:41",
+			'readflag': "false" // "true"
+		},{}]
+	},
+	'/search': {
+		'nav': {
+			'menu': ["<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'><span class='person-menu'></span><i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li><li><a class='tooltip-tip ajax-load' href='person-home.html' title='Home'><i class='fa fa-home'></i><span>Home</span></a></li><li><a class='tooltip-tip ajax-load' href='#' title='Account'><i class='icon-user'></i><span>Account</span></a><ul><li><a class='tooltip-tip2 ajax-load' href='person-info.html' title='Information'><i class='icon-document-edit'></i><span>Information</span></a></li><li><a class='tooltip-tip2 ajax-load' href='abnormal-state.html' title='Abnormal State'><i class='fa fa-exclamation-triangle'></i><span>Abnormal State</span></a></li><li><a class='tooltip-tip2 ajax-load' href='recharge.html' title='Recharge'><i class='fa fa-shopping-cart'></i><span>Recharge</span></a></li></ul> </li>",
+				"<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'> <span class='book-menu'></span> <i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li> <li><a class='tooltip-tip ajax-load' href='search.html' title='Search Booklist'> <i class='fa fa-search'></i> <span>Search Booklist</span></a></li> <li><a id='books_switch' class='tooltip-tip ajax-load' href='#' title='My Books'> <i class='icon-map'></i> <span>My Books</span></a> <ul><li><a class='tooltip-tip2 ajax-load' href='history.html' title='History'><i class='fa fa-clock-o'></i><span>History</span></a></li><li><a class='tooltip-tip2 ajax-load' href='order.html' title='My Orders'><i class='fa fa-bookmark'></i><span>My Orders</span></a></li><li><a class='tooltip-tip2 ajax-load' href='comment.html' title='My Comments'><i class='fa fa-comment'></i><span>My Comments</span></a></li></ul></li>"
+			],
+			'booknumber': 10086,
+			'newbook': 5,
+			'borrowed': 2345,
+			'visitors': 210,
+			'newmessagenum': "5"},
+		'user': {
+			'uid': "151310216",
+			'username': "preciousmouse",
+			'headsrc': "/img/portrait.jpg"},
+		'historylist': [{ //只需前10项
+				'keyword': "大毛"
+			},{}],
+		'hotlist': [{   //只需前20项
+				'keyword': "毛哥"
+			},{}]
+	},
+	'/search/clearhistory': {
+		'send': {
+			'clear': "true"
+		},
+		'data': {
+			'status': "success" // "failed"
+		}
+	},
+	'/search/result': {
+		'send': {
+			'keyword': "大毛",
+			'filter': {
+				'type': "1",   //type  类型表
+								// 0    none
+								// 1    政治、法律
+								// 2    哲学、宗教
+								// 3    军事、经济
+								// 4    语言、文学
+								// 5    文化、科学
+								// 6    教育、体育
+								// 7    艺术、历史
+								// 8    地理、天文
+								// 9    生物、医药
+								// 10   农业、工业
+								// 11   交通、航空
+								// 12   环境、安全
+
+				'language': "1",  // language 类型表
+									//      0   none
+									//      1   中文
+									//      2   英语
+									//      3   日语
+
+				'publishyear': "2018-2018"   // none
+												// 2018-2018
+												// 2015-2017
+												// 2010-2014
+												// 2000-2009
+												// 0000-1999
+			}
+		},
+		'data': {
+			'booklist': [{
+					'bookid': "1315151",
+					'bookname': "八嘎hentai无路赛",
+					'author': "钉宫",
+					'coversrc': "img/book-default.png",
+					'publisher': "loli援助出版社",
+					'brief': "大家一起来嘿嘿嘿吧",
+					'bookallnumber': "2",
+					'bookrestnumber': "1"
+				},{}]
+		}
+	},
+	'/bookdetail': {
+		'nav': {
+			'menu': ["<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'><span class='person-menu'></span><i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li><li><a class='tooltip-tip ajax-load' href='person-home.html' title='Home'><i class='fa fa-home'></i><span>Home</span></a></li><li><a class='tooltip-tip ajax-load' href='#' title='Account'><i class='icon-user'></i><span>Account</span></a><ul><li><a class='tooltip-tip2 ajax-load' href='person-info.html' title='Information'><i class='icon-document-edit'></i><span>Information</span></a></li><li><a class='tooltip-tip2 ajax-load' href='abnormal-state.html' title='Abnormal State'><i class='fa fa-exclamation-triangle'></i><span>Abnormal State</span></a></li><li><a class='tooltip-tip2 ajax-load' href='recharge.html' title='Recharge'><i class='fa fa-shopping-cart'></i><span>Recharge</span></a></li></ul> </li>",
+				"<li><a href='#' style='border-left:0px solid!important;' class='title-menu-left'> <span class='book-menu'></span> <i data-toggle='tooltip' class='entypo-cog pull-right config-wrap'></i></a></li> <li><a class='tooltip-tip ajax-load' href='search.html' title='Search Booklist'> <i class='fa fa-search'></i> <span>Search Booklist</span></a></li> <li><a id='books_switch' class='tooltip-tip ajax-load' href='#' title='My Books'> <i class='icon-map'></i> <span>My Books</span></a> <ul><li><a class='tooltip-tip2 ajax-load' href='history.html' title='History'><i class='fa fa-clock-o'></i><span>History</span></a></li><li><a class='tooltip-tip2 ajax-load' href='order.html' title='My Orders'><i class='fa fa-bookmark'></i><span>My Orders</span></a></li><li><a class='tooltip-tip2 ajax-load' href='comment.html' title='My Comments'><i class='fa fa-comment'></i><span>My Comments</span></a></li></ul></li>"
+			],
+			'booknumber': 10086,
+			'newbook': 5,
+			'borrowed': 2345,
+			'visitors': 210,
+			'newmessagenum': "5"},
+		'user': {
+			'uid': "151310216",
+			'username': "preciousmouse",
+			'headsrc': "/img/portrait.jpg"},
+		'book': {
+			'bookid': "1315151",
+			'bookname': "八嘎hentai无路赛",
+			'author': "钉宫",
+			'coversrc': "img/book-default.png",
+			'publisher': "loli援助出版社",
+			'publishtime': "2008-5-4",
+			'isbn': "7-5327-3655-5",
+			'zhongtutype': "K827",
+			'tags': "魔法-时间-生命",
+			'price': "￥233.00",
+			'brief': "大家一起来嘿嘿嘿吧",
+			'grade': {
+				'score': "4.9",
+				'gradepeoplenum': "100",
+				'stardetail': {
+					'one': "2",
+					'two': "0",
+					'three': "0",
+					'four': "2",
+					'five': "96"
+				}
+			},
+
+			'bookallnumber': "2",
+			'bookrestnumber': "1"},
+		'commentlist': [{
+				'commentid': "135131",
+				'content': "嘿嘿嘿",
+				'floor': "1",
+				'commenttime': "2018-4-17 16:38",
+				'user': {
+					'uid': "151310216",
+					'username': "preciousmouse",
+					'headsrc': "/img/portrait.jpg"}
+			},{}],
+
+		'userborrowsituation': "normal" // "normal"
+											// "borrowed" 已借阅
+											// "ordered"  已预定
+		//if  userborrowsituation === "borrowed"
+			,'renewtimes': "0"
+	}
+
+	//admin 部分之后搞
+}

@@ -1,0 +1,27 @@
+.balance .recharge{
+	user-select: none;
+}
+
+.balance{
+	margin: 50px 50px 30px;
+	padding: 0 15px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #222;
+}
+.balance .sum{
+	color: #00a1d7;
+}
+.balance .recharge{
+	background: #00a1d6;
+	border-radius: 4px;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+	line-height: 14px;
+	padding: 9px 25px;
+	margin: -2px 0 0 20px;
+}
+.balance .recharge:hover{
+	background-color: rgb(0,181,229);
+}

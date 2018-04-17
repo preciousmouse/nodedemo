@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>ELM管理系统 1.3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Le styles -->
+	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/loader-style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/comment.css">
+	
+	<link rel="stylesheet" href="js/datepicker/datepicker.css">
+	<!-- Fav and touch icons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+<!-- TOP NAVBAR -->
+<nav role="navigation" class="navbar navbar-static-top">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+				<span class="entypo-menu"></span>
+			</button>
+			<button class="navbar-toggle toggle-menu-mobile toggle-left" type="button">
+				<span class="entypo-list-add"></span>
+			</button>
+			
+			<div id="logo-mobile" class="visible-xs">
+				<h1>TELMLIBRE<span>v1</span></h1>
+			</div>
+		</div>
+		
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="">
+					<a data-toggle="" class="" href="message.html">
+						<i style="font-size:20px;" class="icon-conversation"></i><div class="noft-red">23</div>
+					</a>
+				</li>
+			</ul>
+			
+			<div id="nt-title-container" class="navbar-left running-text visible-lg">
+				<ul class="date-top">
+					<li class="entypo-calendar" style="margin-right:5px"></li>
+					<li id="Date"></li>
+				</ul>
+				<ul id="digital-clock" class="digital">
+					<li class="entypo-clock" style="margin-right:5px"></li>
+					<li class="hour"></li>
+					<li>:</li>
+					<li class="min"></li>
+					<li>:</li>
+					<li class="sec"></li>
+					<li class="meridiem"></li>
+				</ul>
+				<ul id="nt-title">
+					<li><i class="wi-day-lightning"></i>&#160;&#160;Beijing&#160;
+						<b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
+					</li>
+					<li><i class="wi-day-lightning"></i>&#160;&#160;Shanghai&#160;
+						<b>85</b><i class="wi-fahrenheit"></i>&#160;; Tonight- 72 °F (22.2 °C)
+					</li>
+					<li><i class="wi-day-lightning"></i>&#160;&#160;Nanjing&#160;
+						<b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
+					</li>
+					<li><i class="wi-day-lightning"></i>&#160;&#160;Chengdu&#160;
+						<b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
+					</li>
+					<li><i class="wi-day-lightning"></i>&#160;&#160;Chongqi&#160;
+						<b>85</b><i class="wi-fahrenheit"></i>&#160;; 15km/h
+					</li>
+				</ul>
+			</div>
+			
+			<ul style="margin-right:0;" class="nav navbar-nav navbar-right">
+				<li>
+					<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+						<img alt="" class="admin-pic img-circle" src="/img/portrait.jpg">Hi, Dave Mattew <b class="caret"></b>
+					</a>
+					<ul style="margin-top:14px;" role="menu" class="dropdown-setting dropdown-menu">
+						<li>
+							<a href="person-home.html">
+								<span class="entypo-user"></span>&#160;&#160;My Profile</a>
+						</li>
+						<li>
+							<a href="person-info.html">
+								<span class="entypo-vcard"></span>&#160;&#160;Account Setting</a>
+						</li>
+						<li>
+							<a href="history.html">
+								<span class="entypo-lifebuoy"></span>&#160;&#160;History</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a id="logout" href="#">
+								<span class="entypo-basket"></span>&#160;&#160; Logout</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+						<span class="icon-gear"></span>&#160;&#160;Setting</a>
+					<ul role="menu" class="dropdown-setting dropdown-menu">
+						
+						<li class="theme-bg">
+							<div id="button-bg"></div>
+							<div id="button-bg2"></div>
+							<div id="button-bg3"></div>
+							<div id="button-bg5"></div>
+							<div id="button-bg6"></div>
+							<div id="button-bg7"></div>
+							<div id="button-bg8"></div>
+							<div id="button-bg9"></div>
+							<div id="button-bg10"></div>
+							<div id="button-bg11"></div>
+							<div id="button-bg12"></div>
+							<div id="button-bg13"></div>
+						</li>
+					</ul>
+				</li>
+				<!--<li class="hidden-xs">-->
+				<!--<a class="toggle-left" href="#">-->
+				<!--<span style="font-size:20px;" class="entypo-list-add"></span>-->
+				<!--</a>-->
+				<!--</li>-->
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
+<!-- /END OF TOP NAVBAR -->
+
+<!-- SIDE MENU -->
+<div id="skin-select">
+	<div id="logo">
+		<h1>TELMLIBRE<span>v1</span></h1>
+	</div>
+	<a id="toggle">
+		<span class="entypo-menu"></span>
+	</a>
+	<div class="dark">
+		<form action="#">
+                <span>
+                    <input type="text" name="search" value="" class="search rounded id_search" placeholder="Search Menu..." autofocus="">
+                </span>
+		</form>
+	</div>
+	<div class="search-hover">
+		<form id="demo-2">
+			<input type="search" placeholder="Search Menu..." class="id_search">
+		</form>
+	</div>
+	<div class="skin-part">
+		<div id="tree-wrap">
+			<div class="side-bar">
+				<ul class="topnav menu-left-nest">
+					<li>
+						<a href="#" style="border-left:0px solid!important;" class="title-menu-left">
+							<span class="person-menu"></span>
+							<i data-toggle="tooltip" class="entypo-cog pull-right config-wrap"></i>
+						</a>
+					</li>
+					<li>
+						<a class="tooltip-tip ajax-load" href="person-home.html" title="Home">
+							<i class="fa fa-home"></i>
+							<span>Home</span>
+						</a>
+					</li>
+					<li>
+						<a class="tooltip-tip ajax-load" href="#" title="Account">
+							<i class="icon-user"></i>
+							<span>Account</span>
+						</a>
+						<ul>
+							<li>
+								<a class="tooltip-tip2 ajax-load" href="person-info.html" title="Information"><i class="icon-document-edit"></i><span>Information</span></a>
+							</li>
+							<li>
+								<a class="tooltip-tip2 ajax-load" href="abnormal-state.html" title="Abnormal State"><i class="fa fa-exclamation-triangle"></i><span>Abnormal State</span></a>
+							</li>
+							<li>
+								<a class="tooltip-tip2 ajax-load" href="recharge.html" title="Recharge"><i class="fa fa-shopping-cart"></i><span>Recharge</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="topnav menu-left-nest">
+					<li>
+						<a href="#" style="border-left:0px solid!important;" class="title-menu-left">
+							<span class="book-menu"></span>
+							<i data-toggle="tooltip" class="entypo-cog pull-right config-wrap"></i>
+						</a>
+					</li>
+					<li>
+						<a class="tooltip-tip ajax-load" href="search.html" title="Search Booklist">
+							<i class="fa fa-search"></i>
+							<span>Search Booklist</span>
+						</a>
+					</li>
+					<li>
+						<a id="books_switch" class="tooltip-tip ajax-load" href="#" title="My Books">
+							<i class="icon-map"></i>
+							<span>My Books</span>
+						</a>
+						<ul>
+							<li>
+								<a class="tooltip-tip2 ajax-load" href="history.html" title="History"><i class="fa fa-clock-o"></i><span>History</span></a>
+							</li>
+							<li>
+								<a class="tooltip-tip2 ajax-load" href="order.html" title="My Orders"><i class="fa fa-bookmark"></i><span>My Orders</span></a>
+							</li>
+							<li>
+								<a class="tooltip-tip2 ajax-load" href="comment.html" title="My Comments"><i class="fa fa-comment"></i><span>My Comments</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="side-dash">
+					<h3>
+						<span>Satisfy</span>
+					</h3>
+					<ul class="side-dashh-list">
+						<li>Book Number
+							<span>14526<i style="color:#44BBC1;" class="fa fa-arrow-circle-up"></i>
+                                </span>
+						</li>
+						<li>New Book
+							<span>3<i style="color:#19A1F9;" class="fa fa-arrow-circle-up"></i>
+                                </span>
+						</li>
+						<li>Borrowed
+							<span>3256<i style="color:#AB6DB0;" class="fa fa-arrow-circle-down"></i>
+                                </span>
+						</li>
+					</ul>
+					<h3>
+						<span>Visitors</span>
+					</h3>
+					<div id="g1" style="height:180px" class="gauge"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END OF SIDE MENU -->
+
+<!-- PAPER WRAP -->
+<div class="wrap-fluid">
+	<div class="container-fluid paper-wrap bevel tlbr">
+		<!-- CONTENT -->
+		<!--TITLE -->
+		<div class="row">
+			<div id="paper-top">
+				<div class="col-sm-4">
+					<h2 class="tittle-content-header">
+						<i class="icon-media-record"></i>
+						<span>Message Page
+                                </span>
+					</h2>
+				</div>
+				<div class="col-sm-8">
+					<div class="devider-vertical visible-lg"></div>
+					<div class="tittle-middle-header">
+						
+						<div class="alert">
+							<button type="button" class="close" data-dismiss="alert">×</button>
+							<span class="tittle-alert entypo-info-circled"></span>
+							Welcome back,&nbsp;
+							<strong>Dave mattew!</strong>&nbsp;&nbsp;Your last sig in at Yesterday, 16:54 PM
+						</div>
+					
+					
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<!--/ TITLE -->
+		
+		<!-- BREADCRUMB -->
+		<ul id="breadcrumb">
+			<li>
+				<span class="entypo-home"></span>
+			</li>
+			<li><i class="fa fa-lg fa-angle-right"></i>
+			</li>
+			<li><a href="#">Home</a>
+			</li>
+			<li><i class="fa fa-lg fa-angle-right"></i>
+			</li>
+			<li><a href="#">Account</a>
+			</li>
+			<li><i class="fa fa-lg fa-angle-right"></i>
+			</li>
+			<li><a href="#">Message</a>
+			</li>
+			<li class="pull-right">
+				<div class="input-group input-widget">
+					<input style="border-radius:15px" type="text" placeholder="Search..." class="form-control">
+				</div>
+			</li>
+		</ul>
+		<!-- END OF BREADCRUMB -->
+		
+		<div class="content-wrap">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="list">
+						<div class="head">
+							<div class="time-choose">
+								<span class="text">时间范围：</span>
+								<div data-date-viewmode="years" data-date-format="dd-mm-yyyy"
+								     data-date="12-02-2012" id="datestart" class="input-group date">
+									<input type="text" value="12-02-2012" class="form-control">
+									<span class="input-group-addon add-on entypo-calendar "></span></div>
+								<span class="text">至</span>
+								<div data-date-viewmode="years" data-date-format="dd-mm-yyyy"
+								     data-date="12-02-2012" id="dateend" class="input-group date">
+									<input type="text" value="12-02-2012" class="form-control">
+									<span class="input-group-addon add-on entypo-calendar "></span></div></div>
+							<select class="sort-select form-control pull-right">
+								<option value="active">按时间正序</option>
+								<option value="disabled">按时间倒序</option></select></div>
+						<ul class="comment-list list-group">
+							<li class="list-group-item">
+								<div class="content">
+									苟利国家生死以</div>
+								<div class="comment-info">
+									<span class="floor">#1</span>
+									<span class="time">2018-04-15 00:48</span>
+									<span class="like fontawesome-thumbs-up"></span>
+									<span class="delete">删除</span></div>
+								<div class="location">
+									所在位置： <a href="#" class="book-pointer">Lite Yun——服务器远程管理系统</a></div></li>
+							<li class="list-group-item">
+								<div class="content">
+									苟利国家生死以</div>
+								<div class="comment-info">
+									<span class="floor">#1</span>
+									<span class="time">2018-04-15 00:48</span>
+									<span class="like fontawesome-thumbs-up"></span>
+									<span class="delete">删除</span></div>
+								<div class="location">
+									所在位置： <a href="#" class="book-pointer">Lite Yun——服务器远程管理系统</a></div></li></ul>
+						<ul class="foot-pages clearfix">
+							<li class="prev"><a href="#">上一页</a></li>
+							<li><a href="#">1</a></li>
+							<li class="ellipsis">...</li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li class="now">5</li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li class="ellipsis">...</li>
+							<li><a href="#">11</a></li>
+							<li class="next"><a href="#">下一页</a></li>
+							<li class="page-jump">
+								共<span>11</span>页，跳至<input type="text"/>页</li></ul>
+					</div>
+				</div>
+			</div>
+			
+			<!-- FOOTER -->
+			<div class="footer-space"></div>
+			<div id="footer">
+				<div class="devider-footer-left"></div>
+				<div class="time">
+					<p id="spanDate">
+					<p id="clock">
+				</div>
+				<div class="copyright">Make with Love
+					<span class="entypo-heart"></span>Collect from
+				</div>
+				<div class="devider-footer"></div>
+			</div>
+			<!-- / END OF FOOTER -->
+		</div>
+	</div>
+	<!--  END OF PAPER WRAP -->
+</div>
+<div style="text-align:center;">
+	<p>All Right Reserved</p>
+</div>
+</body>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- MAIN EFFECT -->
+<!--<script type="text/javascript" src="js/preloader.js"></script>-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/load.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<script type="text/javascript" src="js/datepicker/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="js/datepicker/bootstrap-datetimepicker.js"></script>
+<script>
+	$(function(){
+		$('#datestart').datepicker();
+		$('#dateend').datepicker();
+	});
+</script>
+</html>

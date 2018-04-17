@@ -1,0 +1,129 @@
+.wrap-fluid{
+	background: #f5f5f5;
+}
+
+.paper-wrap{
+	color: rgb(110,110,110);
+}
+
+
+.date input{
+	color: #99a2aa !important;
+}
+
+
+.list{
+	float: none;
+	padding: 20px 40px;
+	margin: 25px auto;
+	background-color: rgb(255,255,255);
+	width: 800px;
+	border-radius: 5px;
+}
+
+.head{
+	height: 31px;
+	line-height: 31px;
+	padding: 0 10px;
+}
+
+.time-choose .text{
+	float: left;
+	margin: 0 5px;
+	color: #222;
+}
+.input-group{
+	width: 140px;
+	float: left;
+}
+.sort-select{
+	color: #99a2aa !important;
+	width: auto;
+}
+
+.comment-list li{
+	border: 0;
+	border-bottom: 1px solid rgb(229, 233, 239);
+	margin-top: 20px;
+	padding-bottom: 10px;
+	font-size: 12px;
+}
+.comment-list .content{
+	height: 32px;
+	line-height: 32px;
+	color: #222;
+	margin-bottom: 5px;
+	font-size: 13px;
+}
+
+.comment-info,.location{
+	height: 20px;
+	line-height: 20px;
+	color: #99a2aa;
+	margin-bottom: 5px;
+}
+.location a{
+	color: rgb(0, 150, 205);
+	text-decoration: none;
+}
+
+.comment-info .floor,.comment-info .time{
+	margin-right: 20px;
+}
+.comment-info .like{
+	padding-right: 5px;
+	font-size: 14px;
+}
+
+
+.foot-pages{
+	font-size: 12px;
+	padding: 0;
+}
+.foot-pages li{
+	float: left;
+	
+	color: #222;
+	text-align: center;
+	border-radius: 4px;
+	/*background-color: #fff;*/
+	border: 1px solid #ddd;
+	transition: all .2s;
+	margin: 0 2px;
+	padding: 0 10px;
+	height: 34px;
+	line-height: 34px;
+}
+.foot-pages .ellipsis,.foot-pages .ellipsis:hover,.foot-pages .page-jump,.foot-pages .page-jump:hover{
+	border: 0;
+	margin: 0;
+	background-color: rgba(0,0,0,0);
+	color: inherit;
+}
+.foot-pages .now,.foot-pages li:hover{
+	background-color: rgb(0, 161, 214);
+	border: 1px solid rgb(0, 161, 214);
+	color: #fff;
+}
+.foot-pages .page-jump{
+	float: right;
+}
+.foot-pages .page-jump input[type='text']{
+	margin: 7px 4px 0;
+	padding: 0 10px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	box-shadow: none;
+	width: 30px;
+	color: #222;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	background-color: rgba(255,255,255,0.3);
+	transition: background-color 0.5s;
+	outline: none;
+	text-align: center;
+}
+.foot-pages .page-jump input[type='text']:focus{
+	background-color: rgba(255,255,255,1);
+}
